@@ -11,7 +11,7 @@ body {
     display: flex;
     margin: 0 auto;
 }  
-.screen1{
+.screens{
     background-color: #FB6B6B;
     width: 375px;
     height: 667px;
@@ -56,9 +56,56 @@ body {
     text-align: center;
     color: #D70900;
 }
-.remove-screen{
-    display: none;
+header {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
-.bordas{
-    border:solid;
+header img {
+    width: 52px;
+    height: 60px; 
+    margin-right: 15px;
 }
+header h2 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    transform: rotate(0.58deg);
+}
+.deck {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.deck-question {
+    width: 300px;
+    height: 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.deck-question h3 {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+

@@ -1,17 +1,12 @@
 import Screen2 from "./Screen2";
-function transitionScreens() {
-   setnewDisplay("bordas")
 
-}
-
-
-export default function Screen1() {
+export default function Screen1({ setTela }) {
     return (
-        <div className="screen1">
+        <div className="screens">
             <div className="contents1">
                 <img src="imagens/logo.png" />
                 <h2>ZapRecall</h2>
-                <button onClick={transitionScreens}>Iniciar Recall</button>
+                <button onClick={() => setTela("tela2")}>Iniciar Recall</button>
             </div>
         </div>
 
