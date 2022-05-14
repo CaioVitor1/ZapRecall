@@ -5,7 +5,7 @@ body {
     font-family: 'Righteous', cursive;
     font-family: 'Recursive', sans-serif;
     width: 375px;
-    height: 667px;
+   
     background: #E5E5E5;
     border: 1px solid #DBDBDB;
     display: flex;
@@ -14,8 +14,8 @@ body {
 .screens{
     background-color: #FB6B6B;
     width: 375px;
-    height: 667px;
-    margin: 0 auto;   
+    margin: 0 auto;  
+    padding-bottom: 200px; 
 }
 .contents1 {
     padding-top: 148px;
@@ -83,6 +83,7 @@ header h2 {
 }
 .deck {
     margin-top: 60px;
+    margin-bottom:75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,5 +108,35 @@ header h2 {
     line-height: 19px;
     color: #333333;
 }
-
+.question {
+    width: 299px;
+    height: 131px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 375px;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    
+}
 
