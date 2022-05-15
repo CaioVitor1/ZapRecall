@@ -91,7 +91,7 @@ header h2 {
 }
 .deck-question {
     width: 300px;
-    height: 65px;
+    padding: 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -138,5 +138,52 @@ footer h3{
     line-height: 22px;
     color: #333333;
     
+}
+.deck-respostas {
+    width: 300px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    
+}
+.botoes button {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;  
+}
+.red{
+    background-color: #FF3030;
+    width: 85px;
+    height: 37px;
+}
+.blue{
+   background-color: #FF922E;
+   width: 85px;
+   height: 37px;
+}
+.green{
+    background-color: #2FBE34;
+    width: 85px;
+    height: 37px;
 }
 
