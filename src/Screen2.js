@@ -21,10 +21,10 @@ function comparador() {
 
 everyQuestion.sort(comparador)
 
-function ExportQuestions({setContador, newEmoji, setNewEmoji}) {
+function ExportQuestions({setContador, newEmoji, setNewEmoji,erro, setErro}) {
     return (
         <div className='deck'>
-            {everyQuestion.map((card, index) => <Question newEmoji={newEmoji} setNewEmoji={setNewEmoji} setContador={setContador} index={index} pergunta={card.pergunta} resposta={card.resposta}/>)}
+            {everyQuestion.map((card, index) => <Question erro={erro} setErro={setErro} newEmoji={newEmoji} setNewEmoji={setNewEmoji} setContador={setContador} index={index} pergunta={card.pergunta} resposta={card.resposta}/>)}
         </div>
     )
 }
@@ -34,14 +34,16 @@ function ExportQuestions({setContador, newEmoji, setNewEmoji}) {
 export default function Screen2(props) {
 const [contador, setContador] = React.useState(0);
 const [newEmoji, setNewEmoji] = React.useState([null]);
+const [erro, setErro] = React.useState(0);
+console.log("Os erros são " + erro)
     return (
         <div className="screens">
             <Header />
-            <ExportQuestions newEmoji={newEmoji} setNewEmoji={setNewEmoji} setContador={setContador} />
+            <ExportQuestions erro={erro} setErro={setErro} newEmoji={newEmoji} setNewEmoji={setNewEmoji} setContador={setContador} />
 
 
             <Footer>
-                <Contador newEmoji={newEmoji} contador={contador} />
+                <Contador erro={erro} newEmoji={newEmoji} contador={contador} />
             </Footer >
         </div>
     )

@@ -123,7 +123,7 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 375px;
-    height: 70px;
+    padding: 20px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -213,4 +213,15 @@ footer h3{
 .marcacao-green{
     color: #2FBE34;
     text-decoration-line: line-through;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -11,7 +11,7 @@ export default function Page() {
     
     return (
         <div>
-            {tela === "screen1" ? <Screen1 setTela={setTela}/> : <Screen2 />}
+            {tela === "screen" ? <Screen1 setTela={setTela}/> : <Screen2 />}
         </div>
     )
 

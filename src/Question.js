@@ -1,19 +1,20 @@
 import React from "react"
 
-//setTasks([...tasks, task]);
-export default function Question({ index, pergunta, resposta, setContador, setNewEmoji, newEmoji}) {
+export default function Question({ index, pergunta, resposta, setContador, setNewEmoji, newEmoji, erro, setErro}) {
     const [etapa, setEtapa] = React.useState("numero")
     const [respostaUsuario, setRespostaUsuario] = React.useState(null)
     const [corResposta, setCorResposta] = React.useState(null);
     const [emoji,setEmoji] = React.useState(null)
 
-    function lidarComResposta(resposta, cor,icone) {
+    function lidarComResposta(resposta, cor,icone, verificaErro) {
+        let qtdErros = parseInt(verificaErro)
         setEtapa("resposta");
         setRespostaUsuario(resposta);
         setCorResposta(cor)
         setContador(countAntigo => countAntigo +1)
         setEmoji(icone)
         setNewEmoji([...newEmoji,icone])
+        setErro(countErro => countErro + qtdErros)
     }
 
     return (
@@ -31,9 +32,9 @@ export default function Question({ index, pergunta, resposta, setContador, setNe
         {etapa === "alternativas" && (<div className='deck-respostas'>
                                             <h3> {resposta} </h3> 
                                             <div className="botoes">
-                                                <button onClick={() => lidarComResposta("erro", "red",'imagens/Vector_x.png')} className="red"> Não lembrei!</button>
-                                                <button onClick={() => lidarComResposta("quase", "blue", 'imagens/Vector_question.png')} className="blue"> Quase não lembrei!</button>
-                                                <button onClick={() => lidarComResposta("acerto", "green", 'imagens/Vector_ok.png')} className="green"> ZAP!</button>
+                                                <button onClick={() => lidarComResposta("erro", "red",'imagens/Vector_x.png', "1")} className="red"> Não lembrei!</button>
+                                                <button onClick={() => lidarComResposta("quase", "blue", 'imagens/Vector_question.png',"0")} className="blue"> Quase não lembrei!</button>
+                                                <button onClick={() => lidarComResposta("acerto", "green", 'imagens/Vector_ok.png', "0")} className="green"> ZAP!</button>
                                             </div>
                                         </div>)}
 
