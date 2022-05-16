@@ -4,6 +4,8 @@ import Question from "./Question";
 import Footer from "./Footer";
 import Contador from './Contador';
 
+
+
 const everyQuestion = [
     { id: 1, pergunta: "O que é JSX?", resposta: "Uma extensão de linguagem do JavaScript" },
     { id: 2, pergunta: "O React é __ ", resposta: "Uma biblioteca JavaScript para construção de interfaces" },

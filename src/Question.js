@@ -1,4 +1,6 @@
 import React from "react"
+import setinha from "./assets/Vector.png";
+import retornar from "./assets/return.png";
 
 export default function Question({ index, pergunta, resposta, setContador, setNewEmoji, newEmoji, erro, setErro}) {
     const [etapa, setEtapa] = React.useState("numero")
@@ -21,12 +23,12 @@ export default function Question({ index, pergunta, resposta, setContador, setNe
         <div>
         {etapa === "numero" && (<div onClick={() => setEtapa("pergunta")} className='deck-question'>
                                     <h3> Pergunta {index+1}</h3>
-                                    <img src='imagens/Vector.png' alt='setinha'/>
+                                    <img src={setinha} alt='setinha'/>
                                 </div>)}
 
         {etapa === "pergunta" && (<div className='deck-question'>
                                         <h3> {pergunta} </h3> 
-                                        <img onClick={() => setEtapa("alternativas")} src='imagens/setinha.png'/>
+                                        <img onClick={() => setEtapa("alternativas")} src={retornar}/>
                                     </div>)}
 
         {etapa === "alternativas" && (<div className='deck-respostas'>
