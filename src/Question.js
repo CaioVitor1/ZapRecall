@@ -1,16 +1,19 @@
 import React from "react"
 
-
-export default function Question({ index, pergunta, resposta, setContador }) {
+//setTasks([...tasks, task]);
+export default function Question({ index, pergunta, resposta, setContador, setNewEmoji, newEmoji}) {
     const [etapa, setEtapa] = React.useState("numero")
     const [respostaUsuario, setRespostaUsuario] = React.useState(null)
-    const [corResposta, setCorResposta] = React.useState(null)
+    const [corResposta, setCorResposta] = React.useState(null);
+    const [emoji,setEmoji] = React.useState(null)
 
-    function lidarComResposta(resposta, cor) {
-        setEtapa("resposta")
-        setRespostaUsuario(resposta)
+    function lidarComResposta(resposta, cor,icone) {
+        setEtapa("resposta");
+        setRespostaUsuario(resposta);
         setCorResposta(cor)
         setContador(countAntigo => countAntigo +1)
+        setEmoji(icone)
+        setNewEmoji([...newEmoji,icone])
     }
 
     return (
@@ -28,14 +31,15 @@ export default function Question({ index, pergunta, resposta, setContador }) {
         {etapa === "alternativas" && (<div className='deck-respostas'>
                                             <h3> {resposta} </h3> 
                                             <div className="botoes">
-                                                <button onClick={() => lidarComResposta("erro", "red")} className="red"> Não lembrei!</button>
-                                                <button onClick={() => lidarComResposta("quase", "blue")} className="blue"> Quase não lembrei!</button>
-                                                <button onClick={() => lidarComResposta("acerto", "green")} className="green"> ZAP!</button>
+                                                <button onClick={() => lidarComResposta("erro", "red",'imagens/Vector_x.png')} className="red"> Não lembrei!</button>
+                                                <button onClick={() => lidarComResposta("quase", "blue", 'imagens/Vector_question.png')} className="blue"> Quase não lembrei!</button>
+                                                <button onClick={() => lidarComResposta("acerto", "green", 'imagens/Vector_ok.png')} className="green"> ZAP!</button>
                                             </div>
                                         </div>)}
 
         {etapa === "resposta" && (<div className='deck-marcacao'>
                                     <h3 className={`marcacao-${corResposta}`}> Pergunta {index+1} </h3> 
+                                    <img src={emoji} />
                                   </div>)}
 
         </div>

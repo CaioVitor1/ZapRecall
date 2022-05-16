@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./Header";
 import Question from "./Question";
 import Footer from "./Footer";
-
+import Contador from './Contador';
 
 const everyQuestion = [
     { id: 1, pergunta: "O que é JSX?", resposta: "Uma extensão de linguagem do JavaScript" },
@@ -21,35 +21,27 @@ function comparador() {
 
 everyQuestion.sort(comparador)
 
-function ExportQuestions({setContador}) {
+function ExportQuestions({setContador, newEmoji, setNewEmoji}) {
     return (
         <div className='deck'>
-            {everyQuestion.map((card, index) => <Question setContador={setContador} index={index} pergunta={card.pergunta} resposta={card.resposta}/>)}
+            {everyQuestion.map((card, index) => <Question newEmoji={newEmoji} setNewEmoji={setNewEmoji} setContador={setContador} index={index} pergunta={card.pergunta} resposta={card.resposta}/>)}
         </div>
     )
 }
 
-function Contador({contador}) {
 
-
-    return (
-        <>
-            <h3> {contador}/8 concluídos </h3>
-        </>
-    )
-
-}
 
 export default function Screen2(props) {
-const [contador, setContador] = React.useState(0)
+const [contador, setContador] = React.useState(0);
+const [newEmoji, setNewEmoji] = React.useState([null]);
     return (
         <div className="screens">
             <Header />
-            <ExportQuestions setContador={setContador} />
+            <ExportQuestions newEmoji={newEmoji} setNewEmoji={setNewEmoji} setContador={setContador} />
 
 
             <Footer>
-                <Contador contador={contador} />
+                <Contador newEmoji={newEmoji} contador={contador} />
             </Footer >
         </div>
     )
