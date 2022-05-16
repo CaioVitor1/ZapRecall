@@ -6,7 +6,9 @@ import Screen2 from "./Screen2";
 
 
 export default function Page() {
+    
     const [tela,setTela] = React.useState("screen")
+    
     return (
         <div>
             {tela === "screen1" ? <Screen1 setTela={setTela}/> : <Screen2 />}
