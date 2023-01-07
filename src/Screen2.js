@@ -37,7 +37,7 @@ export default function Screen2(props) {
 const [contador, setContador] = React.useState(0);
 const [newEmoji, setNewEmoji] = React.useState([null]);
 const [erro, setErro] = React.useState(0);
-console.log("Os erros são " + erro)
+
     return (
         <div className="screens">
             <Header />

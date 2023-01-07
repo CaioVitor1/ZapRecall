@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import setinha from "./assets/Vector.png";
 import retornar from "./assets/return.png";
 

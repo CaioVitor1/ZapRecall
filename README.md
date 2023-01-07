@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+<img height="100" width="500" src="./src/assets/logoZaprecall.svg" /> <br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ZapRecall
+<img height="500" width="300" src="./src/assets/zaprecall.gif"> <br> <br>
+<a href='https://zap-recall-kappa.vercel.app/'><button>  Teste aqui!</button></a>
 
-## Available Scripts
+# Tabela de Conteúdos
 
-In the project directory, you can run:
+* [Sobre](#sobre)
+* [Tecnologias](#tecnologias)
+* [Pré-Requisitos](#pre-requisitos)
 
-### `npm start`
+# Sobre
+<h3> Nesse projeto usei React para implementar um app de flashcards chamado Zap Recall!</h3>
+ <h3>Flashcards são cartões de contém uma pergunta/afirmação na sua frente e uma resposta atrás. É possível utilizá-los para treinar sua memória com as metodologias Active Recall e Spaced Repetition. A ideia é ler a pergunta ou afirmação e tentar lembrar da reposta. Ao se deparar com a mesma, dependendo do esforço necessário para responder ou não o flashcard, você fica consciente de quais conteúdos estão frescos na memória e quais não estão, então, pode praticar com frequência os conteúdos que não estão.</h3>
+<h3>  Quando lembramos instantaneamente de um flashcard, tivemos um "Zap!"⚡.</h3> <br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img  height="80" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+<img height="80" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+<img  height="80" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /> <br>
+                    
 
-### `npm test`
+# Pré-Requisitos
+<h3> Antes de começar você precisará ter instalado na sua máquina um setup de um projeto react, o que inclui:<a href='https://www.devmedia.com.br/como-instalar-o-node-js-npm-e-o-react-no-windows/40329'> npm </a> e create-react-app (caso você queira começar o projeto do zero). Além disso, é bom ter um editor para trabalhar com o código como o <a href='https://code.visualstudio.com/download' > VSCode.</a> </h3>
+<h3> <b>Rodando o projeto em sua máquina:</b> </h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
 
-### `npm run build`
+ # Clone o repositório do projeto:
+ git clone</b> https://github.com/CaioVitor1/ZapRecall.git
+ # Acesse a pasta do projeto:
+ cd zapRecall
+ # Instale as dependencias:
+  npm i
+ # Execute a aplicação em modo de desenvolvimento: 
+ npm start
+# O servidor irá rodar na porta 3000. Acesse: http://localhost:3000/ 
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Made with love by <a href='https://www.linkedin.com/in/caiovitor33/'> Caio Vitor </a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<style>
+    button{
+        width: 150px;
+        height: 41px;
+        background: gray;
+        border-radius: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.018em;
+        color: #FFFFFF;
+    }
+    </style>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    
